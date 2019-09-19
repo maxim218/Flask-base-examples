@@ -26,3 +26,11 @@ http://localhost:5000/push/?v=george
 http://localhost:5000/all/
 ```
 
+## API - POST запросы
+
+Получить сумму чисел
+
+```
+curl -H "Content-Type: application/json" -d '{"a":10,"b":17}' -vv http://localhost:5000/post/json/summa/
+```
+
