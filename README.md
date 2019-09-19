@@ -26,6 +26,12 @@ http://localhost:5000/push/?v=george
 http://localhost:5000/all/
 ```
 
+Получить все элементы массива в формате JSON
+
+```
+http://localhost:5000/get/json/all/
+```
+
 ## API - POST запросы
 
 Получить сумму чисел

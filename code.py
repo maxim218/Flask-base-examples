@@ -63,6 +63,15 @@ def postJsonSumma():
     resp.headers["Connection"] = "close"
     resp.headers["Author"] = "Maxim" 
     return resp
+
+@app.route('/get/json/all/')
+def getJsonAll():
+    jsonString = jsonify(queryStatus = "OK", queryResult = arr)
+    resp = make_response(jsonString)
+    resp.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    resp.headers["Connection"] = "close"
+    resp.headers["Author"] = "Maxim" 
+    return resp
     
 if __name__ == '__main__':
     app.run()
